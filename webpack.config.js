@@ -6,12 +6,13 @@ var HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 });
 
 module.exports = {
+    devtool: 'source-map',
     entry: [
         './app/index.js'
     ],
     output: {
-        path: __dirname + '/dist',
-        filename: "index_bundle.js"
+        path: __dirname,
+        filename: "index.js"
     },
     module: {
         loaders: [
